@@ -60,6 +60,49 @@ The list demonstrates deep nesting, combining both `<ol>` (ordered list) and `<u
 
 ![Day 2 Output](output/day2_output.png)
 
+# Day 3_Task - HTML Table Task
+
+This project demonstrates the use of HTML table tags such as `rowspan`, `colspan`, and layout control using CSS to create a complex table structure letter.
+
+## Features
+
+- Complex HTML table with merged cells using `rowspan` and `colspan`
+- CSS styling with `border-collapse`, `table-layout`, and column widths
+- Semantic HTML using `<thead>` and `<tbody>`
+- Fixed-width layout using `table-layout: fixed`
+
+##  HTML Tags Used
+
+| Tag        | Purpose                                          |
+|------------|--------------------------------------------------|
+| `<table>`  | Defines the table structure                      |
+| `<tr>`     | Table row                                        |
+| `<td>`     | Table data cell                                  |
+| `<th>`     | Table header cell                                |
+| `colspan`  | Merges cells horizontally across columns         |
+| `rowspan`  | Merges cells vertically across rows              |
+| `<thead>`  | Table header section                             |
+| `<tbody>`  | Table body section                               |
+
+## Output Screenshot
+
+![Day 3 Output](output/day3_task.png)
+
+
+## CSS Styling
+
+```css
+table {
+    border-collapse: collapse;
+    width: 28%;
+    table-layout: fixed;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
 
 
 

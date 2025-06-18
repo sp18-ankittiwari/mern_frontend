@@ -14,10 +14,10 @@
 
 <!-- 2. METHODS -->
 <form action="/action_page.php" method="get">
-    <label for="first">First Name :</label>
+    <label for="first">First Name get:</label>
     <input type="text" id="first"><br>
 
-    <label for="last">Last Name :</label>
+    <label for="last">Last Name get:</label>
     <input type="text" id="last"><br>
 
     <input type="submit">
@@ -26,10 +26,10 @@
 <!-- 3. Target attribute -->
 
 <form action="/action_page.php" method="get" target="_blank">
-    <label for="first">First Name :</label>
+    <label for="first">First Name target :</label>
     <input type="text" id="first"><br>
 
-    <label for="last">Last Name :</label>
+    <label for="last">Last Name target :</label>
     <input type="text" id="last"><br>
 
     <input type="submit">
@@ -38,14 +38,25 @@
 
 <!-- 4 . AutoComplete -->
 <form action="/action_page.php" method="post" autocomplete="on">
-    <label for="first">First Name :</label>
+    <label for="first">First Name autocomplete:</label>
     <input type="text" id="first"><br>
 
-    <label for="last">Last Name :</label>
+    <label for="last">Last Name autocomplete:</label>
     <input type="text" id="last"><br>
 
     <input type="submit">
 </form>
 <!-- Some other attribute i have wrritten in my notes -->
 <!-- Form Attribute End -->
+
+<!-- The HTML <form> Elements start -->
+    <!-- input and label and text area -->
+<form action="/action_page.php" method="post" autocomplete="on">
+    <label for="last">Text area :</label>
+    <textarea name="message" rows="10" cols="25"></textarea>
+    <input type="submit">
+</form>
+
+<!-- Button -->
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
 
