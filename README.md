@@ -56,27 +56,10 @@ The list demonstrates deep nesting, combining both `<ol>` (ordered list) and `<u
 
 ---
 
-## Output Structure Example:
+## Output Screenshot
 
-I. List Item 1
-a. Nested Item 1.1
-a. Nested Item 1.2
-II. List Item 2
+![Day 2 Output](output/day2_output.png)
 
-Nested List 2.1
-
-Nested List 2.2
-○ Nested Item 2.2.1
-○ Nested Item 2.2.2
-• Nested Item 2.2.2.1
-• Nested Item 2.2.2.2
-○ Nested Item 2.2.3
-
-Nested List 2.3
-III. List Item 3
-• Nested Item 3.1
-• Nested Item 3.2
-• Nested Item 3.3
 
 
 
