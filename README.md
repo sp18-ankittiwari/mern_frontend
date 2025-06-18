@@ -86,7 +86,7 @@ This project demonstrates the use of HTML table tags such as `rowspan`, `colspan
 
 ## Output Screenshot
 
-![Day 3 Output](output/day3_task.png)
+![Day 3 Output](output/Day3.png)
 
 
 ## CSS Styling
