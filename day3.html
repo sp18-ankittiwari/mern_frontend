@@ -4,21 +4,20 @@
 <!-- 1. ACTION -->
 <form action="/action_page.php">
     <label for="first">First Name :</label>
-    <input type="text" id="first"><br>
+    <input type="text" id="first" value="Ankit" readonly><br>
 
     <label for="last">Last Name :</label>
-    <input type="text" id="last"><br>
+    <input type="text" id="last" value="Tiwari" readonly><br>
 
-    <input type="submit">
 </form>
 
 <!-- 2. METHODS -->
 <form action="/action_page.php" method="get">
     <label for="first">First Name get:</label>
-    <input type="text" id="first"><br>
+    <input type="text" id="first" required><br>
 
     <label for="last">Last Name get:</label>
-    <input type="text" id="last"><br>
+    <input type="text" id="last" required><br>
 
     <input type="submit">
 </form>
@@ -59,4 +58,104 @@
 
 <!-- Button -->
 <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+
+
+<!-- HTML Input Types -->
+<h3> HTML INPUT TYPE</h3>
+<form>
+    <!-- Text -->
+    <label for="text"> Text : </label>
+    <input type="text" id="text" name="text"><br><br>
+    
+    <!-- Password -->
+    <label for="password"> Password : </label>
+    <input type="password" id="password" name="password">
+
+    <!-- Radio -->
+    <div>
+    <h4>Radio Button</h4>
+    <input type="radio" id="html" name="language" value="HTML">
+    <label for="html">HTML</label>
+
+    <input type="radio" id="css" name="language" value="CSS">
+    <label for="css"> CSS </label>
+
+    <input type="radio" id="javascript" name="language" value="Javascript">
+    <label for="javascript">Javascript</label>
+    </div>
+
+    <!-- Checkbox -->
+    <div>
+        <h4>Fav Player</h4>
+        <input type="checkbox" name="choice" id="dhoni" value="dhoni">
+        <label for="dhoni">Dhoni</label>
+
+        <input type="checkbox" name="choice" id="kholi" value="kholi">
+        <label for="kholi">Virat</label>
+
+        <input type="checkbox" id="rohit" name="choice" value="Rohit">
+        <label for="rohit">Rohit</label>
+    </div>
+
+    <!-- Color  -->
+    <div>
+        <h4>Pick Colour</h4>
+        <label for="color">Choice Color</label>
+        <input type="color" id="color" name="color" value="#ff00ff">
+    </div>
+
+    <!-- Date -->
+    <div>
+        <h4>choice DOB :</h4>
+        <label for="birthday"> Birthday</label>
+        <input type="date" id="birthday" name="birthday" value="birthday">
+    </div> 
+
+    <!-- Email -->
+     <div>
+        <h4>Fill your Email :</h4>
+        <label for="email">Email </label>
+        <input type="email" id="email" name="email">
+     </div>
+
+    <!-- Image as Button -->
+    <div>
+        <h4>Image as Button</h4>
+        <input type="image" name="image" id="image" src="output/Bird.jpg" alt="Submit" width="100" height="80">
+    </div>
+
+    <!-- File -->
+    <div>
+        <h4>Upload File</h4>
+        <label for="file">Select File</label>
+        <input type="file" id="file" name="file">
+    </div>
+
+    <!-- Number -->
+    <div>
+        <h4>Select Number</h4>
+        <label for="number"> Choose Number Between (1 to 5)</label>
+        <input type="number" id="number" name="number" min="1" max="5" step="2">
+    </div>
+
+    <!-- Telephone Number -->
+    <div>
+        <h4>Telephone Number</h4>
+        <label for="tel">Enter your Phone Number :</label>
+        <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    </div>
+
+    <!-- URL -->
+     <div>
+        <h4>Enter Valid URL</h4>
+        <label for="url">Add Your Homepage</label>
+        <input type="url" id="url" name="url" >
+     </div><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="reset">
+
+
+</form>
 

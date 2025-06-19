@@ -105,4 +105,37 @@ table, th, td {
 }
 
 
+# Day 4_Task - HTML Table Task
+ Book Your Car Service – HTML Form
+A clean and responsive HTML form for booking car service appointments.
+
+Features
+Customer Info: Name, Email, Phone, City (with suggestions)
+
+Vehicle Details: Reg. Number, Model, Make, Color, Year
+
+Service Options: Checkboxes for services, pickup option, preferred time
+
+Feedback: Rating slider and special instructions
+
+Upload: RC document (file input)
+
+Form Controls: Submit & Reset buttons
+
+Tech Used
+HTML5
+
+Internal CSS
+
+Flexbox for layout
+
+Modern input types (email, date, color, range, etc.)
+
+## Output Screenshot
+
+![Day 4 Output](output/day4_task.png)
+
+
+
+
 
