@@ -5,131 +5,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <style>
-        body{
-            background-color: rgb(228, 207, 207)
-              height: 80%;
-    
+        body {
+            background-color: rgba(241, 232, 232, 0.586);
+        }
+        .form-container {
+            width: 60%;
+            background-color: rgba(220, 220, 220, 0.466);
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 10px;
         }
         fieldset{
+            border: none;
             margin-bottom: 30px;
         }
-        legend{
+        legend {
             font-weight: 800;
-            color: black;
             font-size: 20px;
+            color: black;
+            margin-bottom: 15px;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
             margin-bottom: 10px;
         }
+        .form-group {
+            flex: 1 1 45%;
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        input , textarea{
+            padding: 8px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+        textarea{
+          width: 100%;
+          max-width: 100%;
+          resize: vertical;
+        }
+        .button-row{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .submit , .reset {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: none;
+            margin: 0 10px;
+            background-color: #3b83f671;
+            color: white;
+        }
+        .button-row a {
+            padding: 10px 20px;
+            background-color: rgba(255, 0, 0, 0.418);
+            color: white;
+            border-radius: 6px;
+        }
     </style>
+    <!-- Inline ke saath defer badhiya se kaam nahi karta h , defer is best practice for external js file , for inline js use DOMContentLoaded ye phele html ko parse kaege then it will load js file-->
 </head>
 <body>
-    <div style="width: 50%; display: flex; flex-direction: column;  margin: auto;">
-        <h2 style="text-align: center;">Book Your Car Service</h2>
-        <form>
-            <fieldset style="border: none;">
-                <legend>Customer Info</legend>
-                <div style="display: flex; flex-direction: column; gap: 10px;">
-                <div style="display:flex; justify-content: space-between;">
-                <span>  
-                <label for="name">Full Name :</label>
-                <input type="text" id="name" name="name" placeholder="e.g Ankit Tiwari" required>
-                </span> 
-                <span>
-                <label for="emial"> Email :</label>
-                <input type="email" name="email" id="email" placeholder="e.g at2319@gmail.com"> 
-                </span>
-                </div>
+  <div class="form-container">
+    <h2 style="text-align: center; margin-bottom: 30px;">Book Your Car Service</h2>
+    <form action="">
+      <fieldset>
+        <legend>Customer Info</legend>
+        <div class="row">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="e.g Ankit Tiwari" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="e.g at2319@gmail.com">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="number" placeholder="9314376452" required>
+          </div>
+          <div class="form-group">
+            <label for="city">City:</label>
+            <input list="cities" id="city" name="city" placeholder="Select cities">
+            <datalist id="cities">
+              <option value="Delhi"></option>
+              <option value="Noida"></option>
+              <option value="Lucknow"></option>
+              <option value="Banaras"></option>
+              <option value="Ujjain"></option>
+            </datalist>
+          </div>
+        </div>
+      </fieldset>
 
-                <div style="display: flex; justify-content: space-between;">
-                <span> 
-                <label for="number">Phone Number :</label>
-                <input type="tel" name="number" id="number" placeholder="9314-3764-52" pattern="[0-9]{3}-[0-9]4-[0-9]{2}" required>
-                </span>  
-                <span>
-                <label for="city">City</label>
-                <input list="cities" name="city" id="city" placeholder="Select cities">
-                <datalist id="cities">
-                    <option value="Delhi"></option>
-                    <option value="Noida"></option>
-                    <option value="Lucknow"></option>
-                    <option value="Banaras"></option>
-                    <option value="Ujjan"></option>
-                </datalist>
-                </span>
-                </div>
-                </div>
+      <fieldset>
+        <legend>Vehicle Information</legend>
+        <div class="row">
+          <div class="form-group">
+            <label for="regNo">Registration Number:</label>
+            <input type="text" id="regNo" name="regNo" placeholder="MH12BA3456">
+          </div>
+          <div class="form-group">
+            <label for="model">Car Model:</label>
+            <input type="text" id="model" name="model" value="Thar">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <label for="make">Car Make:</label>
+            <input type="text" id="make" name="make" value="Mahindra">
+          </div>
+          <div class="form-group">
+            <label for="color">Car Color:</label>
+            <input type="color" id="color" name="color" value="#ff00ff">
+          </div>
+          <div class="form-group">
+            <label for="year">Model Year:</label>
+            <input type="number" id="year" name="year" min="2000" max="2025" value="2019">
+          </div>
+        </div>
+      </fieldset>
 
+      <fieldset>
+        <legend>Service Details</legend>
+        <div>
+          <label>Services:</label><br>
+          <input type="checkbox" id="washing" name="service" value="Wash">
+          <label for="washing">Exterior Wash</label>
+          <input type="checkbox" id="oil" name="service">
+          <label for="oil">Oil Change</label>
+          <input type="checkbox" id="brake" name="service" value="Brake Inspection">
+          <label for="brake">Brake Inspection</label>
+        </div><br>
+        <div>
+          <label>Need Pickup/Drop?</label><br>
+          <input type="radio" name="pickup" id="yes" value="Yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="pickup" id="no" value="No" checked>
+          <label for="no">No</label>
+        </div><br>
+        <div class="form-group">
+          <label for="slot">Preferred Slot:</label>
+          <input type="datetime-local" id="slot">
+        </div>
+        <div class="form-group">
+          <label for="rate">Rate Your Service:</label>
+          <div style="position: relative; ">
+          <span style="position: absolute;">0</span>
+          <input type="range" id="rate" name="rate" min="0" max="10" value="5" oninput="rateValue.innerText = this.value" style="width: 98%;">
+      
+          <span style="position:absolute; right: 1%; transform: translateY(-2%);">10</span> 
+          </div> 
+          <span id="rateValue" style="padding: 5px; background-color: rgba(255, 0, 0, 0.418); color: white; width: 8%; text-align: center; border-radius: 6px;">5</span>
+        </div>
+        <div class="form-group">
+          <label for="suggestion">Special Instruction:</label>
+          <textarea id="suggestion" name="suggestion" rows="5" placeholder="Any specific problem or request..."></textarea>
+        </div>
+      </fieldset>
 
-            </fieldset>
+      <fieldset>
+        <legend>Document</legend>
+        <div class="form-group">
+          <label for="rc">Upload RC:</label>
+          <input type="file" id="rc" name="rc">
+        </div>
+      </fieldset>
 
+      <div class="button-row">
+        <input class="submit" id="submit_btn" type="submit" value="Submit">
+        <input class="reset" id="reset_btn" type="reset" value="Clear All">
+        <a href="" download="day4_task.html">Download</a>
+      </div>
+    </form>
+  </div>
 
-            <fieldset style="border: none;">
-                <legend>Vehicle Information</legend>
-                <div style="display: flex; flex-direction:column; gap: 10px;">
-                <div>
-                <label for="regNO">Registration Number :</label>
-                <input type="text" id="regNo" name="regNo" placeholder="MH12BA3456" pattern="[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4}">
-                </div>
-                
-                <div>
-                <label for="model"> Car Model :</label>
-                <input type="text" id="model" name="model" value="Thar">
-                </div>
-
-                <div>
-                <label for="make"> Car Make :</label>
-                <input type="text" id="make" name="make" value="Mahindra">
-                </div>
-                <div>
-                <label for="color">Car Color :</label>
-                <input type="color" id="color" name="color" value="#ff00ff">
-                </div>
-
-                <div>
-                <label for="year">Model Year :</label>
-                <input type="number" name="year" id="year" min="2000" max="2025" step="1" value="2019">
-                </div>
-                </div>
-            </fieldset>
-
-            <fieldset style="border: none;">
-                <legend>Service Details</legend>
-
-                <input type="checkbox" id="washing" name="service" value="Wash">
-                <label for="washing">Exterior Wash</label>
-
-                <input type="checkbox" id="oil" name="service">
-                <label for="oil">Oil Change</label>
-
-                <input type="checkbox" id="brake" name="service" value="Brake Inspection">
-                <label for="brake">Brake Inspection</label> <br><br>
-
-                <label for="pickup"> Need Pickup/Drop ?</label>
-                <input type="radio" name="pickup" id="yes" value="Yes">
-                <label for="yes">Yes</label>
-                <input type="radio" id="no" name="pickup" value="No" checked>
-                <label for="no">No</label><br><br>
-
-                <label for="">Preferred Slot</label>
-                <input type="datetime-local"><br><br>
-
-                <label for="rate">Rate Your Service</label>
-                <input type="range" id="rate" name="rate" min="0" max="10"><br><br>
-
-                <label for="suggestion">Special Instruction</label>
-                <textarea name="suggestion" id="suggestion" rows="10" cols="50" placeholder="Any specific problem or request..."></textarea>
-
-            </fieldset>
-
-            <fieldset>
-                <legend>Document</legend>
-                <label for="rc">Upload RC</label>
-                <input type="file" id="rc" name="rc">
-            </fieldset>
-
-            <input type="submit" value="Submit">
-            <input type="reset" value="clear All">
-        </form>
-    </div>
-    
+  <script>
+    document.getElementById("submit_btn").addEventListener("click" , (e)=>{
+        e.preventDefault();
+        alert("Form is Submitted");
+    }); 
+    document.getElementById("reset_btn").addEventListener("click" , (e)=>{
+      console.log("Button is Clicked");
+        e.preventDefault();
+        alert("All input field is Reset");
+    }); 
+  </script>
 </body>
 </html>
