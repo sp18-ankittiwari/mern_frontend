@@ -135,6 +135,80 @@ Modern input types (email, date, color, range, etc.)
 
 ![Day 4 Output](output/day4_task.png)
 
+# 🧾 Day 5 Task – Car Service Booking Form(I worked in this form on day4 i improved much more on day5 )
+
+This project is a responsive, styled car service booking form created using **HTML**, **CSS**, and a bit of **JavaScript**. It includes a variety of input types, fieldsets for grouping, and user-friendly form design.
+
+---
+
+## ✨ Features
+
+- 📇 Collects **Customer Information**: name, email, phone, city (with datalist)
+- 🚗 Gathers **Vehicle Details**: registration, model, make, color, year
+- 🔧 Allows selecting **Services** and pickup/drop options
+- 🗓️ Chooses preferred **date & time slot**
+- 📊 Includes a **rating slider** with dynamic display
+- 📝 Accepts **special instructions** via textarea
+- 📎 Uploads **RC document**
+- 🚨 JS alerts on **form submit** and **reset**
+- 💾 Download the form file as `day4_task.html`
+
+---
+
+## 🔠 HTML Tags & Input Types Used
+
+| Element/Attribute     | Purpose                                          |
+|------------------------|--------------------------------------------------|
+| `<form>`              | Main container for the form                     |
+| `<fieldset>`          | Groups related inputs visually                  |
+| `<legend>`            | Describes each field group                      |
+| `<input type="text">` | Name, registration, city, model, make           |
+| `<input type="email">`| For email address                               |
+| `<input type="tel">`  | For phone number                                |
+| `<input type="color">`| Car color picker                                |
+| `<input type="number">`| For model year with min-max validation         |
+| `<input type="checkbox">`| For multi-service selection                |
+| `<input type="radio">`| Pickup/Drop option                              |
+| `<input type="datetime-local">`| Slot selection                      |
+| `<input type="range">`| Rating slider                                   |
+| `<input type="file">` | Upload RC file                                  |
+| `<textarea>`          | For special instructions                        |
+| `<datalist>`          | Provides city suggestions in text input         |
+
+---
+
+## 🎨 CSS Styling Highlights
+
+| Property               | Description                                      |
+|------------------------|--------------------------------------------------|
+| `width: 60%`           | Limits form width for better layout             |
+| `box-shadow`           | Adds depth to form container                    |
+| `display: flex`        | Aligns input rows side-by-side                  |
+| `flex: 1 1 45%`        | Distributes form groups evenly with wrapping    |
+| `resize: vertical`     | Allows only vertical resizing of textarea       |
+| `border-radius`        | Smooth corners for inputs and buttons           |
+| `position: relative`   | Used to align range slider labels (0 and 10)    |
+
+---
+
+## 🧪 JavaScript Interaction
+
+| Feature               | Description                                      |
+|------------------------|--------------------------------------------------|
+| `Submit Button`        | Prevents default behavior and shows alert       |
+| `Reset Button`         | Prevents reset and displays custom message      |
+| `oninput` on `<input type="range">` | Updates rating dynamically        |
+
+---
+
+## 📷 Output Screenshot
+
+> You can save and place a screenshot in a folder like `/output/Day5.png`.
+
+```markdown
+![Car Booking Form Output](output/Day5.png)
+
+
 
 
 
