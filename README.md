@@ -250,7 +250,7 @@ CSS3
 
 ### 📸 Output Screenshots
 
-![Form 1](./output/form1.png)
+![Form 1](/output/form1.png)
 
 ![Form 2](./output/form2.png)
 
