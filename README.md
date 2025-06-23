@@ -204,9 +204,6 @@ This **Day-5** project focuses on building a fully functional and visually style
 🛍️ Creative Product Order Form
 A modern and visually engaging product order form built using HTML and CSS, designed to capture detailed product orders including quantities, sizes, colors, billing information, gift messages, and payment methods. Ideal for learning or demonstrating form-building and layout techniques.
 
-📸 Preview
-<!-- Optional: Add screenshot -->
-
 ✨ Features
 Product selection with dynamic options for quantity, color, and size
 
@@ -246,4 +243,32 @@ CSS3
 | `border: none`               | CSS Styling   | Removes default input borders for clean design.                          |
 
 
+#  Day 6 - Web Dev Journey
+
+##  What I Learned Today
+
+### ✅ Git & GitHub
+Today, I explored **Git and GitHub basics** through YouTube tutorials. I learned:
+- Creating repositories
+- Cloning repos to local system
+- Committing and pushing changes
+- Managing version control through Git
+- Publishing and updating projects on GitHub
+
+### ✅ JavaScript Basics
+Studied `let`, `var`, and `const` from **W3Schools**:
+
+| Keyword   | Scope        | Reassignable | Hoisting | Notes                                      |
+|-----------|--------------|--------------|----------|--------------------------------------------|
+| `var`     | Function     | ✅ Yes        | ✅ Yes    | Function-scoped, can be redeclared         |
+| `let`     | Block        | ✅ Yes        | ❌ No     | Preferred for mutable values (block-level) |
+| `const`   | Block        | ❌ No         | ❌ No     | Used for constants (cannot be reassigned)  |
+
+> [JavaScript let, const, var - W3Schools](https://www.w3schools.com/js/js_let.asp)
+
+##  Project Work
+
+### 🧾 Project Name: Creative Product Order Form
+
+I continued building the **Product Order Form** project I started during the weekend. Today, I added a **`<table>` section** for handling **bulk product orders** within the form.
 
