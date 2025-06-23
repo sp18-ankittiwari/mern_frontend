@@ -226,29 +226,34 @@ Tech Stack
 HTML5
 CSS3
 
-Key HTML & CSS Concepts Used
-Tag / Property	Type	Purpose / Role in Form
-<form>	                        HTML Element	Wraps all form controls and handles submission.
-input, select, textarea	HTML    Elements	Collect user data like text, options, and long messages.
-type="email", type="tel"	     HTML Attribute	Validates specific input formats (email, phone).
-placeholder                   	Attribute	Displays example text in form fields.
-label for + input id	         HTML Pattern	Associates labels with inputs for accessibility.
-<table>	HTML Element	          Organizes bulk product orders in rows/columns.
-<audio>, <iframe>	             HTML Element	Adds multimedia preview (audio & video).
-name attribute	HTML           Attribute	Assigns identifiers for backend data processing.
-required, min, max	Form       Attribute	Used for input validation and constraints.
-box-sizing: border-box;	        CSS Property	Prevents box overflow by including padding and borders inside width.
-display: flex;	               CSS Layout	Aligns elements in row/column layouts (used in product and form layout).
-gap, flex-wrap	               CSS Flexbox	Adds spacing between items and handles responsive wrapping.
-width, padding, margin	       CSS Properties	Used for spacing, layout, and responsiveness.
-border: none	                 CSS Styling	Removes default input borders for clean design.
+##  Key HTML & CSS Concepts Used
+
+| **Tag / Property**            | **Type**     | **Purpose / Role in Form**                                                |
+|------------------------------|--------------|---------------------------------------------------------------------------|
+| `<form>`                     | HTML Element | Wraps all form controls and handles submission.                          |
+| `input`, `select`, `textarea`| HTML Elements| Collect user data like text, options, and long messages.                |
+| `type="email"`, `type="tel"` | Attribute     | Validates specific input formats (email, phone).                         |
+| `placeholder`                | Attribute     | Displays example text in form fields.                                   |
+| `label for + input id`       | HTML Pattern  | Associates labels with inputs for accessibility.                         |
+| `<table>`                    | HTML Element  | Organizes bulk product orders in rows/columns.                          |
+| `<audio>`, `<iframe>`        | HTML Element  | Adds multimedia preview (audio & video).                                |
+| `name` attribute             | Attribute     | Assigns identifiers for backend data processing.                         |
+| `required`, `min`, `max`     | Form Attribute| Used for input validation and constraints.                              |
+| `box-sizing: border-box;`    | CSS Property  | Prevents box overflow by including padding and borders inside width.    |
+| `display: flex;`             | CSS Layout    | Aligns elements in row/column layouts (used in product and form layout).|
+| `gap`, `flex-wrap`           | CSS Flexbox   | Adds spacing between items and handles responsive wrapping.             |
+| `width`, `padding`, `margin`| CSS Properties| Used for spacing, layout, and responsiveness.                            |
+| `border: none`               | CSS Styling   | Removes default input borders for clean design.                          |
 
 
-## Output Screenshot
 
-![Day Weekend & 6 Output](./output/form1.png)
-![](./output/form5.png)
-![](./output/form2.png)
-![](./output/form3.png)
-![](./output/form4.png)
+
+### Output Screenshots
+
+![Form 1](./output/form1.png)
+![Form 2](./output/form2.png)
+![Form 3](./output/form3.png)
+![Form 4](./output/form4.png)
+![Form 5](./output/form5.png)
+
 
