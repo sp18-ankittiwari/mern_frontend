@@ -200,7 +200,7 @@ This **Day-5** project focuses on building a fully functional and visually style
 
 
 
-# Day Weekend & 6: 
+# Day Weekend: 
 🛍️ Creative Product Order Form
 A modern and visually engaging product order form built using HTML and CSS, designed to capture detailed product orders including quantities, sizes, colors, billing information, gift messages, and payment methods. Ideal for learning or demonstrating form-building and layout techniques.
 
@@ -246,17 +246,4 @@ CSS3
 | `border: none`               | CSS Styling   | Removes default input borders for clean design.                          |
 
 
-
-
-### 📸 Output Screenshots
-
-![Form 1](/output/form1.png)
-
-![Form 2](./output/form2.png)
-
-![Form 3](./output/form3.png)
-
-![Form 4](./output/form4.png)
-
-![Form 5](./output/form5.png)
 
