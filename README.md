@@ -272,3 +272,41 @@ Studied `let`, `var`, and `const` from **W3Schools**:
 
 I continued building the **Product Order Form** project I started during the weekend. Today, I added a **`<table>` section** for handling **bulk product orders** within the form.
 
+
+
+
+
+# JavaScript Learning Log – Day 7
+
+## ✅ Topics I Learned Today
+
+### 🔹 1. How JavaScript Code Runs Behind the Scenes
+- Global Execution Context and Functional Execution Context
+- Memory Allocation (Creation Phase) vs Code Execution (Execution Phase)
+- Call Stack and how JavaScript is single-threaded and synchronous by default
+### 🔹 2. Hoisting in JavaScript
+- Variables declared with `var` are hoisted and initialized with `undefined`
+- Variables declared with `let` and `const` are hoisted but not initialized (Temporal Dead Zone)
+- Accessing `let` or `const` before declaration throws a `ReferenceError`
+
+console.log(a); // undefined
+var a = 10;
+
+console.log(b); // ReferenceError
+let b = 20;
+
+3. Shadowing in JavaScript
+Shadowing occurs when a variable in an inner scope has the same name as one in an outer scope
+
+let and const create block-scoped variables, while var is function-scoped
+
+let x = 1;
+{
+  let x = 2; // shadows the outer 'x'
+  console.log(x); // 2
+}
+console.log(x); // 1
+
+📺 Resource I Used
+I followed Akash Sani's JavaScript tutorials on YouTube:
+🔗 Click to Watch
