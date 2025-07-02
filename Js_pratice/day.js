@@ -524,5 +524,102 @@ const person = {
 // Freeze Object
 Object.freeze(person);
 
+// ===================Loop ===========================================
+
+// for loop
+for (let i = 0 ; i < n ; i++ ){
+  console.log(i);
+  i =  i+1 
+}
+
+
+// Two good case of for loop
+var i = 5 ;
+
+for (var i  = 0 ; i < 10 ; i++ ){
+    console.log(i); // 0 1 2 3 4 5 6 7 8 9
+}
+console.log(i); // 10
+
+let i = 5 ;
+
+for (let i  = 0 ; i < 10 ; i++ ){
+    console.log(i);// 0 1 2 3 4 5 6 7 8  9
+}
+console.log(i); // 5
+
+
+for (; i < 5; i++) {
+  console.log(i);
+} // it will give refernece error , because i is not defined for this for loop
+
+
+
+// while 
+
+let i = 0 ; 
+while ( i < 10 ){
+  console.log(i);
+}
+
+// do while 
+let i  =0 ;
+do {
+  console.log(i);
+}while(i < 10);
+
+// for-of
+
+let arr2 = ["Ank", "Tiw", "How", "are", "you"];
+
+for (let x of arr2) {
+  console.log(x);
+}
+
+
+// for-in over the object
+const person = {fname:"John", lname:"Doe", age:25};
+
+let text1 = "";
+for (let x in person) {
+  text1 += person[x];
+}
+
+// for-each
+
+let arr5 = ["Ank" , "Tiw" , "How" , "are" , "you"];
+
+arr5.forEach ((item , index , arr) => {
+    console.log(item);
+})
+
+// foreach does not return anything
+const result1 = [1, 2, 3].forEach(num => num * 2);
+console.log(result1); // undefined
+
+// foreach skip empty 
+let arr3 = [1, , 3]; // index 1 is empty
+
+arr3.forEach((val, i) => {
+  console.log(i, val);
+});
+
+
+// break 
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    break; // Exit the loop entirely
+  }
+  console.log(i);
+}
+
+// continue 
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    continue; // it only skip one step
+  }
+  console.log(i);
+}
 
 

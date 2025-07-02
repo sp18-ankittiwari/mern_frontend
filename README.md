@@ -243,7 +243,7 @@ CSS3
 | `border: none`               | CSS Styling   | Removes default input borders for clean design.                          |
 
 
-#  Day 6 - Web Dev Journey
+#  Day 8 - Web Dev Journey
 
 ##  What I Learned Today
 
@@ -276,7 +276,7 @@ I continued building the **Product Order Form** project I started during the wee
 
 
 
-# JavaScript Learning Log – Day 7
+# JavaScript Learning Log – Day 9
 
 ## ✅ Topics I Learned Today
 
@@ -310,3 +310,286 @@ console.log(x); // 1
 📺 Resource I Used
 I followed Akash Sani's JavaScript tutorials on YouTube:
 🔗 Click to Watch
+
+# JavaScript Learning Log – Day 10
+i studied String 
+
+
+# JavaScript Learning Log – Day 11-12 ans weekend 
+
+I worked on html-css-task , using this i worked on project
+
+
+
+
+# JavaScript Learning Log – Day 15
+
+JavaScript Arrays – What I Learned
+✅ 1. Creating Arrays
+Using square brackets:
+const fruits = ["Apple", "Banana", "Mango"];
+Using new Array():
+const numbers = new Array(1, 2, 3, 4);
+📦 2. Accessing & Modifying Elements
+Access by index (0-based):
+console.log(fruits[0]); // "Apple"
+Change value:
+fruits[1] = "Orange";
+➕ 3. Array Methods
+Add/Remove at end:
+fruits.push("Grapes");   // Add
+fruits.pop();            // Remove
+Add/Remove at start:
+fruits.unshift("Kiwi");  // Add
+fruits.shift();          // Remove
+🔁 4. Iterating Over Arrays
+Using for loop:
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+Using forEach:
+fruits.forEach(function(item) {
+  console.log(item);
+});
+🔍 5. Searching & Filtering
+includes():
+fruits.includes("Apple"); // true
+indexOf():
+fruits.indexOf("Banana"); // -1 (if not found)
+filter():
+const bigNums = numbers.filter(num => num > 10);
+
+🧠 6. Other Useful Methods
+concat() – combine arrays
+
+slice() – extract a portion
+
+splice() – remove/replace elements
+
+join() – convert to string
+
+reverse() – reverse array
+
+sort() – sort elements (be careful with numbers)
+
+🧪 7. Array Type Checks
+Array.isArray(fruits); // true
+typeof fruits;         // "object"
+
+🔄 8. Map, Reduce, Find
+map() – transform each item:
+const doubled = numbers.map(num => num * 2);
+reduce() – accumulate values:
+const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+find() – first match:
+const found = numbers.find(num => num > 10);
+
+🧊 9. Immutable vs Mutable
+Most array methods mutate the array (push, pop, splice)
+Some methods return a new array (map, filter, slice)
+
+## 📚 Link
+check out [Visit W3Schools](https://www.w3schools.com).
+
+
+
+
+# JavaScript Learning Log – Day 16
+
+1. Object Creation
+Using literals:
+const obj = { firstName: "Ankit", age: 23 };
+
+Using new Object():
+const person = new Object();
+person.firstName = "Ank";
+
+🛠️ 2. Accessing & Modifying Properties
+Dot notation & Bracket notation:
+console.log(person.firstName); // or person["firstName"]
+Add property: person.nationality = "Indian";
+
+Delete property: delete person.age;
+
+Accessing missing properties returns undefined
+
+🔁 3. Looping & Conversion
+For-in loop:
+for (let key in person) {
+  console.log(person[key]);
+}
+Object utility methods:
+
+Object.keys(obj) → array of property names
+
+Object.values(obj) → array of values
+
+Object.entries(obj) → array of key-value pairs
+
+Object.fromEntries() → convert array to object
+
+JSON.stringify(obj) → object to JSON string
+
+🧠 4. Methods Inside Objects
+Objects can contain functions (methods):
+const person = {
+  fullName: function() { return this.first + " " + this.last; }
+};
+👪 5. Constructor Functions & Prototypes
+Function as constructor:
+function Person(f, l, a) {
+  this.first = f;
+  this.last = l;
+  this.age = a;
+}
+Add shared property using prototype:
+Person.prototype.nationality = "Indian";
+Add method to all instances:
+Person.prototype.changeName = function(name) {
+  this.lastName = name;
+};
+⚠️ 6. Important Exceptions
+You cannot directly add methods to constructor like Person.changeName = ... for all instances — use prototype instead.
+
+Math is a global object — not constructible with new.
+
+🧊 7. Object Immutability
+Prevent changes:
+
+Object.preventExtensions(obj) – can't add new props
+
+Object.seal(obj) – can't add/remove, only modify
+
+Object.freeze(obj) – fully read-only
+
+🧪 8. Miscellaneous
+Object.assign(target, source) – merges two objects
+
+Object.getOwnPropertyNames(obj) – returns all properties (including non-enumerable)
+
+Nested objects are accessed like obj.child.key
+
+## 📚 Link
+
+check out [Visit W3Schools](https://www.w3schools.com).
+
+
+
+
+# JavaScript Learning Log – Day 17
+
+/* various cases i tried in for loop   */
+
+| Case                           | Code Example                                         | Behavior         | Notes                                  |
+| ------------------------------ | ---------------------------------------------------- | ---------------- | -------------------------------------- |
+| 1️⃣ All parts present          | `for (let i = 0; i < 5; i++)`                        | ✅ Normal loop    | Most common                            |
+| 2️⃣ No Initialization          | <pre>let i = 0;<br>for (; i < 5; i++)                | ✅ Works          | `i` must be declared earlier           |
+| 3️⃣ No Condition               | `for (let i = 0;; i++)`                              | 🔁 Infinite loop | Runs forever unless `break` is used    |
+| 4️⃣ No Increment               |  for (let i = 0; i < 5; ) {<br>  i++;<br>}          | ✅ Works          | You control `i++` manually inside loop |
+| 5️⃣ Only condition & increment | let i = 0;<br>for (; i < 5; i++)                     | ✅ Works          | Initialization done outside            |
+| 6️⃣ Only increment             | let i = 0;<br>for (;; i++)                           | 🔁 Infinite loop | No condition → always true             |
+| 7️⃣ All omitted                | `for (;;)`                                           | 🔁 Infinite loop | Like a `while(true)` loop              |
+
+➤ for loop basics
+for (let i = 0; i < n; i++) {
+  console.log(i);
+  i = i + 1;
+}
+Practiced how incrementing i manually affects loop execution.
+
+Realized that this can skip values unintentionally.
+
+➤ Two good examples – var vs let
+var i = 5;
+for (var i = 0; i < 10; i++) {
+  console.log(i);  // prints 0 to 9
+}
+console.log(i);      // prints 10 (var is function-scoped)
+
+let i = 5;
+for (let i = 0; i < 10; i++) {
+  console.log(i);  // prints 0 to 9
+}
+console.log(i);      // prints 5 (because let is block-scoped)
+This helped me understand scope difference between var and let.
+
+➤ Reference error when using undeclared variable 
+for (; i < 5; i++) {
+  console.log(i);
+}
+// Got a ReferenceError if `i` is not defined before the loop
+➤ while loop
+let i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+Straightforward — keeps running till the condition is true.
+
+➤ do...while loop
+let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 10);
+Even if condition is false, runs once — good to know for specific cases.
+
+🔂 Looping Over Arrays & Objects
+➤ for...of (best array , if we used on object it will give syntax error)
+let arr = ["Ank", "Tiw", "How", "are", "you"];
+for (let word of arr) {
+  console.log(word);
+}
+Best for values in an array.
+
+➤ for...in (used on objects)
+const person = { fname: "John", lname: "Doe", age: 25 };
+for (let key in person) {
+  console.log(person[key]);
+}
+Loops through keys in an object.
+
+➤ forEach()
+let arr = ["Ank", "Tiw", "How", "are", "you"];
+arr.forEach((item, index, array) => {
+  console.log(item);
+});
+Tried using it for logic — realized it doesn’t return anything.
+Example:
+const result = [1, 2, 3].forEach(num => num * 2);
+console.log(result); // undefined
+Also learned: it skips empty items:
+let arr = [1, , 3];
+arr.forEach((val, i) => {
+  console.log(i, val);  // Only 0 and 2 printed
+});
+
+🔄 Loop Control: break & continue
+➤ break // it terminate the loop as condition of break true 
+for (let i = 0; i < 10; i++) {
+  if (i === 5) break;
+  console.log(i); // stops when i is 5
+}
+➤ continue // it skip only one step
+for (let i = 0; i < 10; i++) {
+  if (i === 5) continue;
+  console.log(i); // skips printing 5
+}
+🧊 JavaScript Object Protection
+Studied three important methods:
+
+1. Object.freeze(obj)
+Prevents any changes — no adding, deleting, or editing properties.
+
+2. Object.seal(obj)
+Can't add/delete properties, but can change existing values.
+
+3. Object.preventExtensions(obj)
+Blocks adding new properties, but allows deleting or modifying existing ones.
+
+👉 Tried small examples on each. Got more clarity on how to make objects read-only or semi-editable.
+
+📚 Link
+🔗 https://www.w3schools.com/js/js_loop_for.asp – Loops in JS
+
+🔗 https://www.w3schools.com/js/js_objects.asp – JavaScript Objects
