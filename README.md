@@ -276,7 +276,7 @@ I continued building the **Product Order Form** project I started during the wee
 
 
 
-# JavaScript Learning Log – Day 9
+#  Web Dev Journey – Day 9
 
 ## ✅ Topics I Learned Today
 
@@ -322,7 +322,7 @@ I worked on html-css-task , using this i worked on project
 
 
 
-# JavaScript Learning Log – Day 15
+#  Web Dev Journey– Day 15
 
 JavaScript Arrays – What I Learned
 ✅ 1. Creating Arrays
@@ -394,7 +394,7 @@ check out [Visit W3Schools](https://www.w3schools.com).
 
 
 
-# JavaScript Learning Log – Day 16
+#  Web Dev Journey – Day 16
 
 1. Object Creation
 Using literals:
@@ -476,7 +476,7 @@ check out [Visit W3Schools](https://www.w3schools.com).
 
 
 
-# JavaScript Learning Log – Day 17
+#  Web Dev Journey– Day 17
 
 /* various cases i tried in for loop   */
 
@@ -586,10 +586,123 @@ Can't add/delete properties, but can change existing values.
 
 3. Object.preventExtensions(obj)
 Blocks adding new properties, but allows deleting or modifying existing ones.
-
-👉 Tried small examples on each. Got more clarity on how to make objects read-only or semi-editable.
+Tried small examples on each. Got more clarity on how to make objects read-only or semi-editable.
 
 📚 Link
 🔗 https://www.w3schools.com/js/js_loop_for.asp – Loops in JS
 
 🔗 https://www.w3schools.com/js/js_objects.asp – JavaScript Objects
+
+
+
+
+
+
+#  Web Dev Journey– Day 18
+
+
+## 🧠 JavaScript Function Concepts
+
+### 1. Parameters vs Arguments
+- **Parameters**: Defined in function declaration.
+- **Arguments**: Actual values passed when function is called.
+
+ 2. Missing Arguments Are `undefined`
+function greet(x, y) {
+  console.log(x, y);
+}
+greet(10); // 10 undefined
+ 3. Default Parameters
+function greet(name = "Guest") {
+  console.log("Hello " + name);
+}
+greet(); // Hello Guest
+4. Rest Parameters
+function sum(...args) {
+  return args.reduce((acc, curr) => acc + curr, 0);
+}
+sum(1, 2, 3); // 6
+5. arguments Object
+Available in regular functions (not arrow).
+
+Useful for accessing all passed arguments.
+function findMax() {
+  let max = -Infinity;
+  for (let i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) max = arguments[i];
+  }
+  return max;
+}
+Pass by Value vs Reference
+ 6. Primitives Are Passed by Value
+function modify(x) {
+  x += 10;
+}
+let a = 5;
+modify(a);
+console.log(a); // 5
+ 7. Objects Are Passed by Reference
+function modify(obj) {
+  obj.name = "Ankit";
+}
+const user = { name: "John" };
+modify(user);
+console.log(user.name); // Ankit
+
+Function Invocation
+8. Regular Function Call
+function multiply(a, b) {
+  return a * b;
+}
+multiply(2, 3); // 6
+ 9. this Keyword
+Depends on how the function is called
+
+Refers to the object invoking the function
+const person = {
+  name: "Ankit",
+  greet() {
+    console.log("Hello " + this.name);
+  }
+};
+person.greet(); // Hello Ankit
+
+🧩 call, apply, bind
+✅ 10. call() – Function Borrowing
+function greet() {
+  console.log("Hello " + this.name);
+}
+const user1 = { name: "Ankit" };
+const user2 = { name: "Rahul" };
+greet.call(user1); // Hello Ankit
+greet.call(user2); // Hello Rahul
+
+✅ 11. apply() – Like call(), but accepts array arguments
+function intro(city, country) {
+  console.log(`${this.name} from ${city}, ${country}`);
+}
+const person = { name: "Ankit" };
+intro.apply(person, ["Delhi", "India"]); // Ankit from Delhi, India
+
+✅ 12. bind() – Returns a new function with this fixed
+function sayHi() {
+  console.log("Hi " + this.name);
+}
+const person = { name: "Ankit" };
+const sayHiToAnkit = sayHi.bind(person);
+sayHiToAnkit(); // Hi Ankit
+
+⚙️ Generator Functions
+✅ 13. Generator Basics
+js
+Copy
+Edit
+function* generateNums() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+const gen = generateNums();
+console.log(gen.next()); // { value: 1, done: false }
+
+

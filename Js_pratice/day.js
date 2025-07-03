@@ -623,3 +623,110 @@ for (let i = 0; i < 10; i++) {
 }
 
 
+// ===========================Function==========
+
+
+// Function Parameters : what function take while definning the function 
+// Function argument : when we call the function then what we pass that is functio arguments
+
+
+
+
+//If a function is called with missing arguments (less than declared), the missing values are set to undefined
+function myFunction(x, y) {
+  console.log(x); // 4
+  console.log(y);// undefined
+  }
+myFunction(4);
+
+// that why give default paarameter
+function myFunction(x, y = 10) {
+  return x + y;
+}
+myFunction(5);
+
+// rest parameter
+
+function sum (... args){
+    console.log(args); // [ 23, 4, 5, 5,7, 8, 9]
+}
+sum(23,4,5,5,7,8,9);
+
+
+function sum (x , y , ... args){
+    console.log(args);
+}
+sum(23,4,5,5,7,8,9);
+
+
+// arguments 
+x = findMax(1, 123, 500, 115, 44, 88);
+
+function findMax() {
+  let max = -Infinity;
+  for (let i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+}
+
+// if a function is declared with too many arguments , you can access all the argument by using arguments properties
+
+// passed by value
+function modifyValue(x) {
+  x = x + 10;
+  console.log("Inside:", x);
+}
+
+let a = 5;
+modifyValue(a);
+console.log("Outside:", a);
+
+// passed object as refernce 
+function modifyObject(obj) {
+  obj.name = "Ankit";
+}
+
+let person = { name: "John" };
+modifyObject(person);
+console.log(person.name); // ✅ Ankit
+
+// invoking a function
+
+function myFunction(a, b) {
+  return a * b;
+}
+myFunction(10, 2); // 20
+window.myFunction(10, 2); // 20 both are same thing
+
+// generator  function 
+function* generateNums() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+const gen = generateNums();
+console.log(gen.next()); 
+
+
+// this 
+
+// call
+const obj3 = {
+  name: "Ankit",
+  greet: function() {
+    console.log("Hello " + this.name);
+  }
+};
+
+const obj4 = {
+  name: "Rahul"
+};
+
+obj3.greet.call(obj4); // ✅ Hello Rahul
+
+// apply 
+
+// bind
