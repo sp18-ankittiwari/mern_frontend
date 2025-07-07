@@ -62,6 +62,10 @@ The list demonstrates deep nesting, combining both `<ol>` (ordered list) and `<u
 
 ![Day 2 Output](output/day2_output.png)
 
+
+
+
+
 # Day 3_Task - HTML Table Task
 
 This project demonstrates the use of HTML table tags such as `rowspan`, `colspan`, and layout control using CSS to create a complex table structure letter.
@@ -113,29 +117,20 @@ table, th, td {
 
 
 # Day 4_Task - HTML Table Task
- Book Your Car Service – HTML Form
+Book Your Car Service – HTML Form
 A clean and responsive HTML form for booking car service appointments.
 
 Features
 Customer Info: Name, Email, Phone, City (with suggestions)
-
 Vehicle Details: Reg. Number, Model, Make, Color, Year
-
 Service Options: Checkboxes for services, pickup option, preferred time
-
 Feedback: Rating slider and special instructions
-
 Upload: RC document (file input)
-
 Form Controls: Submit & Reset buttons
-
 Tech Used
 HTML5
-
 Internal CSS
-
 Flexbox for layout
-
 Modern input types (email, date, color, range, etc.)
 
 ## Output Screenshot
@@ -200,23 +195,17 @@ This **Day-5** project focuses on building a fully functional and visually style
 
 
 
-# Day Weekend: 
-🛍️ Creative Product Order Form
+# Day-6, 7 ( Weekend): 
+🛍️ Creative Product Order Form Project :
 A modern and visually engaging product order form built using HTML and CSS, designed to capture detailed product orders including quantities, sizes, colors, billing information, gift messages, and payment methods. Ideal for learning or demonstrating form-building and layout techniques.
 
 ✨ Features
 Product selection with dynamic options for quantity, color, and size
-
 Bulk order table for quick product entry
-
 User contact and billing address input
-
 Optional gift message input
-
 Product preview audio
-
 Embedded demo video (YouTube)
-
 Payment method selection (Card, PayPal)
 
 Tech Stack
@@ -311,13 +300,80 @@ console.log(x); // 1
 I followed Akash Sani's JavaScript tutorials on YouTube:
 🔗 Click to Watch
 
+
+
+
+
+
+
 # JavaScript Learning Log – Day 10
-i studied String 
+
+A string in JavaScript is a sequence of characters used to represent text. Strings are immutable and can be created using:
+let str1 = "Hello";
+let str2 = 'World';
+let str3 = `Welcome`; // Template literals
+String Basics :-
+Strings are primitive values.
+typeof "Hello" // "string"
 
 
-# JavaScript Learning Log – Day 11-12 ans weekend 
+🔧 Common String Methods
+Method	                               Description	                                  Example
+length	                          Returns the length	                           "Hello".length → 5
+charAt(n)                       	Returns char at index n	                       "Hello".charAt(1) → "e"
+slice(start, end)	                Extracts part of a string	                     "Hello".slice(1, 4) → "ell"
+substring(start, end)	            Similar to slice (no negatives)	               "Hello".substring(1, 4) → "ell"
+substr(start, length)	            Extracts part with length	                     "Hello".substr(1, 3) → "ell"
+replace(str, newStr)	            Replaces first match	                         "foo bar".replace("foo", "baz") → "baz bar"
+toUpperCase()	                    Converts to uppercase	                         "abc".toUpperCase() → "ABC"
+toLowerCase()	                    Converts to lowercase	                         "ABC".toLowerCase() → "abc"
+trim()	                          Removes whitespace	                           " hello ".trim() → "hello"
+split(delim)	                    Splits into array	                             "a,b,c".split(",") → ["a","b","c"]
+includes(substr)	                 Checks if contains                            	"abc".includes("b") → true
 
-I worked on html-css-task , using this i worked on project
+# String Immutability
+Strings cannot be changed after creation. All operations return new strings.
+
+#  Template Literals (ES6+)
+const name = "Ankit";
+const greet = `Hello, ${name}!`; // => "Hello, Ankit!"
+Allows multi-line strings and expression interpolation.
+
+# Edge Cases & Tips
+Negative index doesn’t work with substring():
+"abc".substring(-1) → "abc"
+Prefer slice() over substr() (deprecated).
+
+Use String() or .toString() to convert values to strings.
+
+🧠 Best Practices
+Use template literals for better readability.
+
+Avoid using new String() – it's a wrapper object:
+typeof new String("Hello") // "object" (not "string")
+
+📎 Resources
+W3Schools – JS Strings
+MDN Web Docs – Strings
+
+
+
+# JavaScript Learning Log – Day 11-12 and 13-14(weekend)
+
+I worked on html-css-task , This project is a pixel-perfect frontend implementation of a UI design provided by the company via Figma. The goal was to translate the design into a fully responsive, clean, and accessible webpage using HTML and CSS, with some JavaScript for interactivity where required.
+
+#. What I Learned
+How to interpret Figma layers, components, spacing, and typography
+Writing semantic and accessible HTML
+Creating responsive layouts using flexbox and media queries
+Understanding real-world design-to-code workflow and expectations
+
+
+Demo Link : https://sp18-ankittiwari.github.io/mern_frontend/
+
+
+
+
 
 
 
@@ -601,7 +657,7 @@ Tried small examples on each. Got more clarity on how to make objects read-only 
 #  Web Dev Journey– Day 18
 
 
-## 🧠 JavaScript Function Concepts
+##  JavaScript Function Concepts
 
 ### 1. Parameters vs Arguments
 - **Parameters**: Defined in function declaration.
@@ -667,7 +723,7 @@ const person = {
 };
 person.greet(); // Hello Ankit
 
-🧩 call, apply, bind
+#. call, apply, bind
 ✅ 10. call() – Function Borrowing
 function greet() {
   console.log("Hello " + this.name);
@@ -692,7 +748,7 @@ const person = { name: "Ankit" };
 const sayHiToAnkit = sayHi.bind(person);
 sayHiToAnkit(); // Hi Ankit
 
-⚙️ Generator Functions
+#. Generator Functions
 ✅ 13. Generator Basics
 js
 Copy
@@ -705,4 +761,200 @@ function* generateNums() {
 const gen = generateNums();
 console.log(gen.next()); // { value: 1, done: false }
 
+
+
+
+
+
+
+#  Web Dev Journey– Day 19
+
+
+🔹 1. JavaScript Object Quiz i Tried :-
+Took an in-depth quiz on JavaScript Objects
+
+Covered core topics like:
+Object creation methods
+this keyword inside objects
+Prototypes and inheritance
+Shallow vs Deep copy
+Object methods: Object.keys(), Object.values(), Object.entries()
+Object.freeze(), Object.seal(), Object.preventExtensions()
+
+🔹 2. Solved JS Questions on Functions & Objects
+Practiced coding problems on:
+🔗 HackerRank
+🔗 LeetCode
+
+#. Topics Covered:
+Function expressions vs declarations
+Arrow functions and lexical this
+Closures and scope chain
+Higher-order functions
+Object traversal using for...in, Object.keys()
+Nested objects and recursion
+Creating reusable utility functions for object operations
+
+🔹 3. Mini Project – Image Click to Expand
+Built a mini project where clicking an image expands it in place, mimicking a lightbox effect.
+
+# Features:
+Small image view by default
+On click, image smoothly expands
+Click outside or close button reverts to normal state
+
+
+
+
+
+
+
+
+
+
+#  Web Dev Journey– Day 20-21 (Weekend)
+
+
+This repository is a reflection of my deep dive into JavaScript fundamentals, concepts, and real-world applications. I’ve completed all lectures from the following highly acclaimed playlists by Akshay Saini:
+
+#. Playlists Covered:
+🔗 Namaste JavaScript - Season 1
+
+🔗 Namaste JavaScript - Season 2
+
+🔗 Core JavaScript Fundamentals
+
+#. What I’ve Learned
+✅ Core JavaScript Concepts:
+Lexical Environment and Scope Chain
+Closures (Real-world use cases explained)
+Event Loop, Call Stack, Callback Queue
+Hoisting, Temporal Dead Zone
+Block vs Functional Scope
+Debouncing & Throttling
+this Keyword Behavior
+Bind, Call, Apply
+Prototypes and Inheritance
+Memory Management (Garbage Collection, Memory Leaks)
+Promises, Async/Await
+Event Delegation and Bubbling
+And much more...
+
+#. Projects Built Along the Way
+🔸 1. Scroll Animation (HTML + CSS + JS)
+Description: A simple yet elegant animation effect when the user scrolls down the page. Elements smoothly slide in from the side or fade in based on scroll position using getBoundingClientRect() and scroll event.
+
+Tech Stack:
+HTML | CSS | JavaScript
+
+Key Concepts Used:
+getBoundingClientRect() for detecting element visibility
+window.addEventListener('scroll', ...)
+DOM Manipulation
+CSS transitions
+
+🔸 2. Animated Search Bar Toggle
+Description: A minimal search bar component that expands when the search icon is clicked, and collapses when inactive. Built using just HTML, CSS, and JavaScript for interactive UI behavior.
+
+Tech Stack:
+HTML | CSS | JavaScript
+
+Key Concepts Used:
+CSS animations and transitions
+DOM event listeners
+Class toggling using element.classList.toggle()
+Responsive and minimalist UI behavior
+
+
+
+
+
+
+#  Web Dev Journey– Day 22
+
+#. What I Practiced:
+1. Debouncing in JavaScript
+2. Throttling in JavaScript
+
+🧠 Recursive Thinking with Nested Objects
+
+🎙️ Interview Preparation (Akshay Saini’s Playlist)
+
+# Debouncing – Avoiding Excessive Function Calls
+Concept: Debouncing ensures a function is not called again until a specified delay has passed since its last invocation. Useful in:
+
+Search input suggestions
+Window resizing
+Form validation
+
+#). Code Example:
+function debounce(func, delay) {
+  let timer;
+  return function (...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func.apply(this, args);
+    }, delay);
+  };
+}
+const handleSearch = debounce(() => {
+  console.log("Search triggered");
+}, 300);
+inputElement.addEventListener('input', handleSearch);
+
+#). Throttling – Controlling Event Firing Frequency
+Concept: Throttling limits how often a function is executed within a time frame. Common use cases:
+
+Scroll events
+Button clicks
+API calls at fixed rate
+
+Code Example:
+function throttle(func, limit) {
+  let lastCall = 0;
+  return function (...args) {
+    const now = new Date().getTime();
+    if (now - lastCall >= limit) {
+      lastCall = now;
+      func.apply(this, args);
+    }
+  };
+}
+const handleScroll = throttle(() => {
+  console.log("Scroll event triggered");
+}, 1000);
+window.addEventListener('scroll', handleScroll);
+
+🔁 Thinking Recursively with Nested Objects
+Concept: Recursion allows traversing through deeply nested objects to perform tasks like flattening, searching, or transforming data.
+
+Example: Sum of all numeric values in a nested object
+function sumNestedObject(obj) {
+  let total = 0;
+  for (const key in obj) {
+    if (typeof obj[key] === 'number') {
+      total += obj[key];
+    } else if (typeof obj[key] === 'object') {
+      total += sumNestedObject(obj[key]);
+    }
+  }
+  return total;
+}
+
+const data = {
+  a: 10,
+  b: {
+    c: 5,
+    d: {
+      e: 2
+    }
+  }
+};
+
+console.log(sumNestedObject(data)); // Output: 17
+
+🔗 Useful Resources
+Akshay Saini - Namaste JavaScript :-
+MDN - Debounce & Throttle
+JavaScript Recursion Explained
 
