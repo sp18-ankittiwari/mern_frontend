@@ -958,3 +958,34 @@ Akshay Saini - Namaste JavaScript :-
 MDN - Debounce & Throttle
 JavaScript Recursion Explained
 
+
+
+
+#  Web Dev Journey– Day 23
+
+# 📁 Projects Covered
+
+### 1. Login Form with Wave Label Effect — `project6/`
+
+> A stylish login form where the label text animates in a wave-like motion when focused. This is a UI/UX enhancement to improve visual engagement.
+
+**Features:**
+- Pure HTML/CSS animation
+- Wave effect on focus
+- Responsive and clean layout
+
+### 2. Soundboard with Speaking Buttons — `project7/`
+
+> A soundboard where each button plays a specific sound when clicked. The sounds include applause, booing, victory, and more.
+
+**Features:**
+- Audio elements linked to buttons
+- Dynamic button creation using JavaScript
+- Audio stop logic to prevent overlaps
+
+##  What I Practiced
+
+- JavaScript Promises (asynchronous behavior, `.then`, `.catch`, `.finally`)
+- Working with HTMLAudioElement
+- DOM manipulation and dynamic content generation
+- CSS transitions and hover animations
