@@ -730,3 +730,7 @@ obj3.greet.call(obj4); // ✅ Hello Rahul
 // apply 
 
 // bind
+
+
+
+
