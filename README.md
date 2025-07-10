@@ -989,3 +989,109 @@ JavaScript Recursion Explained
 - Working with HTMLAudioElement
 - DOM manipulation and dynamic content generation
 - CSS transitions and hover animations
+
+
+
+
+
+
+
+#  Web Dev Journey– Day 24
+# JavaScript Concepts what learned today:
+🔁 Event Loop
+Manages the execution of call stack and message queues.
+
+Handles asynchronous callbacks (e.g., setTimeout, fetch) after synchronous code finishes.
+
+⏳ Callback Queue
+Stores callbacks from setTimeout, DOM events, etc.
+
+Executes only when call stack is empty.
+
+🪢 Microtask Queue
+Contains tasks from Promises, queueMicrotask, and MutationObserver.
+
+Always runs before the callback queue.
+
+🤔 The this Keyword
+Refers to the object that called the function.
+
+In arrow functions, this is lexically scoped (inherits from parent scope).
+
+In regular functions, this depends on how the function is called (window, object, undefined in strict mode).
+
+💡 Project: Random Joke Generator
+# Description
+A fun project that generates a random joke on every button click by fetching it from a public API using fetch().
+
+🔗 API Used
+https://icanhazdadjoke.com/
+
+# Features
+Click a button to fetch and display a random joke.
+Uses fetch API with custom headers.
+Handles async request using async/await.
+Clean and simple UI with a responsive design.
+
+🔗 Useful Resources
+https://archive.org/details/50-projects-in-50-days-html-css-java-script_202207/02+Day+1+-+Expanding+Cards/006+Initial+Cards.mp4
+Akshay Saini - Namaste JavaScript[from Youtube]
+
+
+
+
+
+
+
+
+
+
+
+
+#  Web Dev Journey– Day 25
+
+
+# DOM Selection & Manipulation Methods
+Method	Description
+document.getElementById()	Selects an element by its ID.
+document.getElementsByClassName()	Returns a live HTMLCollection of elements with the given class.
+document.getElementsByTagName()	Returns a live HTMLCollection of elements with the given tag name.
+document.querySelector()	Returns the first element matching a CSS selector.
+document.querySelectorAll()	Returns a static NodeList of all elements matching a selector.
+element.textContent	Gets or sets the text content of an element.
+element.innerHTML	Gets or sets HTML inside the element.
+element.setAttribute()	Sets a new attribute or updates an existing one.
+element.getAttribute()	Gets the value of an attribute.
+element.classList.add()	Adds a class to the element.
+element.classList.remove()	Removes a class from the element.
+element.classList.toggle()	Toggles a class on/off on the element.
+element.style.property	Sets inline CSS styles.
+document.createElement()	Creates a new element node.
+parent.appendChild()	Appends a node as the last child of a parent.
+element.remove()	Removes an element from the DOM.
+element.addEventListener()	Attaches an event handler to an element.
+
+💡 Projects Built Today
+🔤 1. Keyboard Info Display App
+Description:
+A simple interactive page where whenever a user presses a key on the keyboard, the screen displays:
+The key pressed
+The key code
+The total number of key presses
+
+Key Features:
+Real-time keyboard event handling (keydown)
+Dynamic content update using textContent and DOM manipulation
+Live count tracking
+
+⏱️ 2. Dynamic Box Timer (Counter + Box Spawner)[task]
+Description:
+A timer-based counter project that:
+Starts counting seconds when "Start" is clicked
+Adds a new box for each second dynamically
+
+Key Features:
+DOM manipulation with createElement, appendChild
+Positioning using Flexbox and CSS transitions
+Use of setInterval and clearInterval
+Reset and Stop functionality
