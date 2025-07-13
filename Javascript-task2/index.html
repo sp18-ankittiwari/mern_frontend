@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record System</title>
+    <link rel="stylesheet" href="student_record.css">
+</head>
+<body>
+
+    <div class="project-container">
+        <h1>Student Record System</h1>
+
+        <div class="container">
+        
+        <div class="left-section">   
+        <div class="section-container">
+            <div class="section-a">
+                <h2>Section A</h2>
+                <div class="add wrap">
+                    <h3>Add Student</h3>
+                    <form action="" id="add-student">
+                        <div class="data-wrap">
+                            <label for="add-id">Id:</label>
+                            <input type="number" placeholder="Id" id="add-id" required>
+                        </div>
+                        <div class="data-wrap">
+                            <label for="add-name">Name:</label>
+                            <input type="text" placeholder="Name" id="add-name" required>
+                        </div>
+                        <div class="data-wrap">
+                            <label for="add-age">Age:</label>
+                            <input type="number" placeholder="Age" id="add-age" required>
+                        </div>
+
+                        <button class="btn" type="submit">Add Student</button>
+                    </form>
+                </div>
+
+                <div class="remove wrap">
+                    <h3>Remove Student</h3>
+                   <div class="data-wrap">
+                        <label for="remove-id">Id:</label>
+                        <input type="number" placeholder="Id" id="remove-id" required>
+                   </div>
+                   <button class="btn" id="remove">Remove Student</button>
+                </div>
+
+                <div class="update-name wrap">
+                    <h3>Update Name:</h3>
+                    <div class="data-wrap">
+                        <label for="update-id">Id:</label>
+                        <input type="number" placeholder="Id" id="update-id" required>
+                   </div>
+                   <div class="data-wrap">
+                        <label for="update-name">Name:</label>
+                        <input type="text" placeholder="update-name" id="update-name" required>
+                   </div>
+                   <button class="btn" id="update-button">Update Name</button>
+                </div>
+
+                <div class="get-student wrap">
+                    <h3>Get Student By Id</h3>
+                    <div class="data-wrap">
+                        <label for="student-id">Student Id:</label>
+                        <input type="number" placeholder="student id" id="student-id" required>
+                   </div>
+                   <button class="btn" id="get-student-btn">Get Student By Id</button>
+                </div>
+
+                <div class="thresold wrap">
+                    <h3>Get Student those avg Score greater than Thresold</h3>
+                    <div class="data-wrap">
+                        <label for="thresold">Thresold Value:</label>
+                        <input type="number" placeholder="thresold" id="thresold-value" required>
+                   </div>
+                    <button class="btn" id="thresold-btn">Get Student</button> 
+                </div>
+
+                <div class="course-roster wrap">
+                    <h3>Get Course Roster</h3>
+                    <div class="data-wrap">
+                        <label for="course-name">Course Name:</label>
+                        <input type="text" id="course-name" placeholder="CS101*" required>
+                    </div>
+                    <button class="btn" id="get-course-roster">Get Roster</button>
+                </div>
+
+            </div>
+
+            
+            <div class="section-b">
+                <h2>Section B</h2>
+                <div class="StudentSummaries wrap">
+                    <h3>Get Student Summaries</h3>
+                    <!-- <div class="data-wrap">
+                    </div> -->
+                    <button class="btn" id="StudentSummaries-btn">Get StudentSummaries</button>
+                </div>   
+
+                <div class="first-underage wrap">
+                    <h3>Get First Underage Student</h3>
+                    <div class="data-wrap">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" placeholder="18*" required>
+                    </div>
+                    <button class="btn" id="age-btn">Get first-underAge</button>
+                </div>
+
+                <div class="passmark wrap">
+                    <h3>Number of failing course (passmark is given by you)</h3>
+                    <div class="data-wrap">
+                        <label for="passmark">PassMark:</label>
+                        <input type="number" id="passmark" placeholder="33" required>
+                    </div>
+                    <button class="btn" id="passmark-btn">Get failed Student</button>
+                </div>
+
+            </div>
+
+
+
+            <div class="section-c">
+                <h2>Section C</h2>
+                <div class="course-stats wrap">
+                    <h3>Course Statistics</h3>
+                    <!-- <div class="data-wrap">
+                    </div> -->
+                   <button class="btn" id="course-stats-btn">Get Course Stats</button>
+                </div>
+            </div>
+           
+
+            <div class="section-d">
+                <h2>Section D</h2>
+                <div class="grade-filter wrap">
+                    <h3>Filter Students by Grade Range</h3>
+                    <div class="data-wrap">
+                        <label for="min-grade">Min Grade:</label>
+                        <input type="number" placeholder="e.g. 60" id="min-grade" required>
+                    </div>
+                    <div class="data-wrap">
+                        <label for="max-grade">Max Grade:</label>
+                        <input type="number" placeholder="e.g. 90" id="max-grade" required>
+                    </div>
+                    <button class="btn" id="grade-filter-btn">Filter Students</button>
+                </div>
+            </div>
+
+
+
+            <div class="section-e">
+                <h2>Section E</h2>
+                <div class="instructor-courses wrap">
+                    <h3>Get Courses by Instructor</h3>
+                   <div class="data-wrap">
+                        <label for="instructor-id">Instructor ID:</label>
+                         <input type="number" id="instructor-id" placeholder="Enter instructor ID" required>
+                    </div>
+                   <button class="btn" id="get-courses-btn">Get Courses</button>
+                </div>
+
+
+                <div class="total-credits wrap">
+                    <h3>Total Credits Per Student</h3>
+                    <div class="data-wrap"></div>
+                    <button class="btn" id="total-credits-btn">Get Credits</button>
+                </div>
+
+
+
+                <div class="transcript-section wrap">
+                    <h3>Student Transcript</h3>
+                   <button class="btn" id="get-transcript-btn">Get Transcripts</button>
+                </div>
+
+
+
+                <div class="course-averages wrap">
+                    <h3>Course Average Grades</h3>
+                   <button class="btn" id="course-averages-btn">Get Course Averages</button>
+                </div>
+
+
+
+                <div class="top-students-course wrap">
+                    <h3>Top Students by Course</h3>
+                    <div class="data-wrap">
+                        <label for="course-code">Course Code:</label>
+                        <input type="text" id="course-code" placeholder="Enter course code" required>
+                    </div>
+                    <div class="data-wrap">
+                        <label for="top-n">Number of Top Students:</label>
+                        <input type="number" id="top-n" placeholder="3" required>
+                    </div>
+                    <button class="btn" id="top-students-btn">Get Top Students</button>
+                </div>
+
+            </div>
+
+
+        </div>
+        </div> 
+
+        <div class="right-section">
+            <h2 class="right-heading">OutPut</h2>
+           <div class="output-container" id="output-container"></div>
+        </div>
+
+
+        </div>
+
+    </div>
+    
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
