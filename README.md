@@ -1095,3 +1095,81 @@ DOM manipulation with createElement, appendChild
 Positioning using Flexbox and CSS transitions
 Use of setInterval and clearInterval
 Reset and Stop functionality
+
+
+
+
+
+
+
+
+# Web Dev Journey– Day 26
+
+Project : Counter Application(Javascript task 1)
+Description:
+A simple counter application built using HTML, CSS, and JavaScript.
+It allows users to increment, decrement, and reset the counter.
+
+
+ans start working on (javascript task2)
+Features:
+Increment, Decrement, Reset Buttons
+And Box above and below the middle box
+Responsive UI with clean design
+Basic DOM manipulation
+
+# Study Notes: JavaScript Promises
+During this project, I studied JavaScript Promises and practiced questions related to:
+Promise creation and chaining
+then, catch, finally methods
+Async/Await usage
+Error handling with Promises
+
+Practice Topics:
+Callback hell vs Promises
+Microtasks and event loop behavior with Promises(solved various question on this)
+
+
+
+
+
+# Web Dev Journey– Day 27-28 (Weekend)[worked on Javascript task2]
+# Project Summary
+# Core Functions (Section A–E)
+addStudent(students, newStudent) → Adds a new student without mutating original array.
+removeStudentById(students, id) → Removes a student by ID using filter.
+updateStudentName(students, id, newName) → Updates student name using map and spread operator.
+getStudentById(students, id) → Retrieves a student object using find.
+calculateAverageGrade(student) → Calculates average grade using map, filter, reduce.
+getHonorRoll(students, threshold) → Filters students by grade threshold using pure functions.
+getCourseRoster(students, courseName) → Returns students enrolled in a specific course.
+printStudentSummaries(students) → Loops through students and logs ID, Name, AvgGrade.
+findFirstUnderage(students, ageLimit) → Finds first underage student using for + break.
+countFailingCourses(students, passMark) → Counts failing courses using while and continue.
+printCourseStats(students) → Logs course min, max, avg using reduce, Object.entries.
+createGradeFilter(min, max) → Factory function using closures for filtering by grade range.
+getCoursesByInstructor(courses, instructorId) → Async function returning instructor courses.
+totalCreditsPerStudent(students, courses) → Calculates total credits using relational data.
+studentTranscript(students, courses, instructors) → Generates transcripts using nested loops.
+courseAverages(students) → Calculates course average grades using pure logic.
+topStudentsByCourse(students, courseName, n) → Gets top n students per course using sorting.
+
+# Frontend Summary
+Built using HTML, CSS, Vanilla JavaScript.
+Implemented forms and buttons connected to logic functions.
+Displayed results using dynamic DOM updates with innerHTML, createElement, etc.
+
+# connection 
+I connected each function with frontend using main.js as a middleware and i also used async-await to call the fucntion 
+and i also made helper function to create table and make code asyn.
+
+# Concepts Practiced & Learned
+Different Functions
+Array Methods: map(), filter(), reduce(), find()
+Destructuring & Spread Operator
+Factory Functions & Closures
+Loop Constructs: for, while, do…while, break, continue
+Async JavaScript: Promises, async/await
+Modular JavaScript Architecture
+DOM Manipulation Basics
+
