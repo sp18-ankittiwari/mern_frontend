@@ -1183,11 +1183,19 @@ Namaste React Journey (Episodes 01-03)
 
 I have started learning React through the Namaste React series by Akshay Saini. Below is a concise summary covering all three episodes together, explaining each concept and what I learned:
 
-In Episode 01 (Inception), I set up Visual Studio Code with essential extensions like Prettier and ES7+ React snippets to write clean and faster code. I revised the basics by writing a simple Hello World program using plain HTML and JavaScript to strengthen my fundamentals. Then I learned about CDN (Content Delivery Network), which allows including external libraries like React and ReactDOM directly into HTML files without local installations, enabling quick setups. Finally, I created my first React Hello World program using CDN setup, rendering text into the browser DOM using React.createElement and ReactDOM.render.
+In Episode 01 (Inception), I set up Visual Studio Code with essential extensions like Prettier and ES7+ React snippets to write clean and faster code.
+ I revised the basics by writing a simple Hello World program using plain HTML and JavaScript to strengthen my fundamentals.
+Then I learned about CDN (Content Delivery Network), which allows including external libraries like React and ReactDOM directly into HTML files without local installations,
+enabling quick setups. Finally, I created my first React Hello World program using CDN setup, rendering text into the browser DOM using React.createElement and ReactDOM.render.
 
-In Episode 02 (Igniting Our App), I learned about npm (Node Package Manager) to initialize projects using npm init and manage dependencies efficiently. I explored Parcel, a zero-config bundler that simplifies bundling React apps with features like Hot Module Replacement (HMR), caching, and production builds. I understood the role of node_modules in storing installed packages locally and why it should be ignored in GitHub using .gitignore. Lastly, I analyzed the standard React app file structure, learning the purpose of files like package.json, index.html, and index.js.
+In Episode 02 (Igniting Our App), I learned about npm (Node Package Manager) to initialize projects using npm init and manage dependencies efficiently.
+I explored Parcel, a zero-config bundler that simplifies bundling React apps with features like Hot Module Replacement (HMR), caching, and production builds.
+I understood the role of node_modules in storing installed packages locally and why it should be ignored in GitHub using .gitignore.
+Lastly, I analyzed the standard React app file structure, learning the purpose of files like package.json, index.html, and index.js.
 
-In Episode 03 (Laying the Foundation), I learned JSX (JavaScript XML), which allows writing HTML-like code inside JavaScript, and how Babel transpiles it to React createElement calls behind the scenes. I understood the concept of React components as reusable, independent pieces of UI that make apps modular and maintainable. I explored the difference between Class-based components (traditional ES6 class approach) and Functional components (modern, simpler function-based approach), which are now widely used with React Hooks.
+In Episode 03 (Laying the Foundation), I learned JSX (JavaScript XML), which allows writing HTML-like code inside JavaScript, a
+nd how Babel transpiles it to React createElement calls behind the scenes. I understood the concept of React components as reusable, independent pieces of UI that make apps modular and maintainable.
+I explored the difference between Class-based components (traditional ES6 class approach) and Functional components (modern, simpler function-based approach), which are now widely used with React Hooks.
 
 
 
@@ -1195,9 +1203,14 @@ In Episode 03 (Laying the Foundation), I learned JSX (JavaScript XML), which all
 
  Continuing my Namaste React journey by Akshay Saini, here are my learnings from Episodes 04 to 06:
 
-In Episode 04 (Talk is Cheap, Show Me the Code), I focused on implementing React’s core features by building a small React app to strengthen my understanding. I learned about props and state, where props are used to pass data from parent to child components, making components dynamic, and state is used to manage internal data within a component, enabling reactivity in UI. Additionally, I practiced function mapping by rendering lists dynamically using map() in React, which is essential for rendering data-driven UI components efficiently.
+In Episode 04 (Talk is Cheap, Show Me the Code), I focused on implementing React’s core features by building a small React app to strengthen my understanding.
+I learned about props and state, where props are used to pass data from parent to child components, making components dynamic, and state is used to manage internal data within a component, enabling reactivity in UI. Additionally,
+I practiced function mapping by rendering lists dynamically using map() in React, which is essential for rendering data-driven UI components efficiently.
 
-In Episode 05 (Let's Get Hooked), I explored the React file structure in-depth, understanding how to organize files and components for better scalability. I revised import/export concepts in JavaScript ES6 to structure and reuse components seamlessly. The main highlight was learning React Hooks, specifically useState, which allows adding state to functional components without converting them into class-based components. I practiced multiple examples using useState to create interactive components with real-time UI updates.
+In Episode 05 (Let's Get Hooked), I explored the React file structure in-depth, understanding how to organize files and components for better scalability.
+I revised import/export concepts in JavaScript ES6 to structure and reuse components seamlessly. The main highlight was learning React Hooks,
+specifically useState, which allows adding state to functional components without converting them into class-based components.
+I practiced multiple examples using useState to create interactive components with real-time UI updates.
 
 In Episode 06 (Exploring the World), I gained insights into React app architecture, understanding how components communicate and the importance of clean file structures. I learned about the useEffect Hook, which helps handle side effects like fetching data, DOM manipulation, or setting timers in functional components. I also practiced conditional rendering to display UI elements based on specific conditions, making apps dynamic and user-friendly. Finally, I explored API usage in React, fetching data using the fetch method inside useEffect and rendering API responses in the UI efficiently.
 
@@ -1221,11 +1234,17 @@ Practice multiple small projects using props, state, useState, and useEffect, in
 
 Continuing my Namaste React journey by Akshay Saini, here are my learnings from Episodes 07 to 09:
 
-In Episode 07 (Finding the Path), I learned about React Router, a powerful library that enables navigation between different components or pages in a React app without reloading the page. I implemented Dynamic Routing to handle routes with parameters, allowing pages to render based on dynamic data (like user IDs or product IDs). I also learned about the Outlet component, which helps render child routes inside parent route components, making nested routing clean and efficient.
+In Episode 07 (Finding the Path), I learned about React Router, a powerful library that enables navigation between different components or pages in a React app without reloading the page.
+I implemented Dynamic Routing to handle routes with parameters, allowing pages to render based on dynamic data (like user IDs or product IDs).
+I also learned about the Outlet component, which helps render child routes inside parent route components, making nested routing clean and efficient.
 
-In Episode 08 (Let's Get Classy), I explored Class-based components, revising their structure using ES6 classes and the render() method. I studied lifecycle methods like constructor, componentDidMount, componentDidUpdate, and componentWillUnmount, understanding their roles in managing component behavior at different stages. Although modern React focuses on functional components with hooks, knowing lifecycle methods in class-based components builds a strong foundational understanding.
+In Episode 08 (Let's Get Classy), I explored Class-based components, revising their structure using ES6 classes and the render() method.
+I studied lifecycle methods like constructor, componentDidMount, componentDidUpdate, and componentWillUnmount, understanding their roles in managing component behavior at different stages.
+Although modern React focuses on functional components with hooks, knowing lifecycle methods in class-based components builds a strong foundational understanding.
 
-In Episode 09 (Optimizing our App), I learned about Custom Hooks, which allow reusing stateful logic across multiple components, making code cleaner and DRY (Don’t Repeat Yourself). I studied optimization techniques to enhance React app performance, like breaking large components into smaller reusable components and preventing unnecessary re-renders. I also explored the Suspense component, which helps handle lazy loading in React, allowing parts of the UI to load asynchronously, improving user experience and performance.
+In Episode 09 (Optimizing our App), I learned about Custom Hooks, which allow reusing stateful logic across multiple components, making code cleaner and DRY (Don’t Repeat Yourself).
+I studied optimization techniques to enhance React app performance, like breaking large components into smaller reusable components and preventing unnecessary re-renders.
+I also explored the Suspense component, which helps handle lazy loading in React, allowing parts of the UI to load asynchronously, improving user experience and performance.
 # I practice all these by applying together
 
 
@@ -1236,11 +1255,19 @@ In Episode 09 (Optimizing our App), I learned about Custom Hooks, which allow re
 
 Continuing my Namaste React journey by Akshay Saini, here are my learnings from Episodes 10 to 12:
 
-In Episode 10 (Jo Dikhta Hai, Vo Bikta Hai), I was introduced to Tailwind CSS, a utility-first CSS framework that allows designing responsive and modern UIs rapidly without writing custom CSS classes from scratch. I practiced using Tailwind classes for styling React components, understanding how it speeds up the design process and keeps the codebase clean by eliminating external CSS files for small stylings.
+In Episode 10 (Jo Dikhta Hai, Vo Bikta Hai), I was introduced to Tailwind CSS, a utility-first CSS framework that allows designing responsive
+and modern UIs rapidly without writing custom CSS classes from scratch. I practiced using Tailwind classes for styling React components,
+understanding how it speeds up the design process and keeps the codebase clean by eliminating external CSS files for small stylings.
 
-In Episode 11 (Data is the New Oil), I learned about Higher-Order Components (HOCs), which are functions that take a component as input and return an enhanced component, enabling reusability of component logic. I also explored Controlled vs Uncontrolled Components, understanding that controlled components manage form inputs via React state, ensuring complete control over input data, while uncontrolled components rely on direct DOM manipulation using refs. Additionally, I explored React DevTools, which help inspect component hierarchies, states, and props, greatly improving debugging efficiency.
+In Episode 11 (Data is the New Oil), I learned about Higher-Order Components (HOCs), which are functions that take a component as input
+and return an enhanced component, enabling reusability of component logic. I also explored Controlled vs Uncontrolled Components,
+ understanding that controlled components manage form inputs via React state, ensuring complete control over input data,
+while uncontrolled components rely on direct DOM manipulation using refs. Additionally, I explored React DevTools, which help inspect component hierarchies, states, and props, greatly improving debugging efficiency.
 
-In Episode 12 (Let's Build Our Store), I delved into Redux Toolkit, the modern and official way to implement Redux, simplifying state management with less boilerplate code. I learned about integrating React-Redux to connect Redux stores with React components seamlessly. I practiced creating actions and reducers using Redux Toolkit's createSlice and configureStore, understanding how they manage global state efficiently, making complex applications scalable and maintainable.
+In Episode 12 (Let's Build Our Store), I delved into Redux Toolkit, the modern and official way to implement Redux, simplifying state management with less boilerplate code.
+I learned about integrating React-Redux to connect Redux stores with React components seamlessly.
+I practiced creating actions and reducers using Redux Toolkit's createSlice and configureStore, understanding how they manage global state efficiently,
+ making complex applications scalable and maintainable.
 
 # Overall, from Episodes 10-12, I learned:
 How Tailwind CSS simplifies responsive UI design with utility classes.
@@ -1260,9 +1287,13 @@ Connecting Redux with React using React-Redux, and understanding actions and red
 
 Today, I started building my YouTube Clone project using React.js and YouTube Data API v3 to replicate core YouTube functionalities and strengthen my React and API integration skills.
 
-I began by designing the Header component, which includes the YouTube logo, a search bar (functionality to be added later), and placeholders for profile and notification icons, making the top navigation look clean and similar to YouTube’s layout. I then built the Sidebar component with multiple buttons like Home, Trending, Subscriptions, Library, and History, styled using Tailwind CSS to ensure responsiveness and a modern UI.
+I began by designing the Header component, which includes the YouTube logo, a search bar (functionality to be added later),
+ and placeholders for profile and notification icons, making the top navigation look clean and similar to YouTube’s layout.
+ I then built the Sidebar component with multiple buttons like Home, Trending, Subscriptions, Library, and History, styled using Tailwind CSS to ensure responsiveness and a modern UI.
 
-After setting up the UI structure, I generated my YouTube API key and successfully fetched data using YouTube Data API v3, retrieving trending videos and logging them in the console for testing. This helped me understand how to make API requests using fetch, parse the data, and plan for dynamically rendering video cards in the upcoming steps.
+After setting up the UI structure, I generated my YouTube API key and successfully fetched data using YouTube Data API v3,
+retrieving trending videos and logging them in the console for testing. This helped me understand how to make API requests using fetch, parse the data,
+and plan for dynamically rendering video cards in the upcoming steps.
 
 # Overall, today I learned:
 How to structure a React project with modular components (Header, Sidebar, VideoContainer).
