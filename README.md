@@ -1307,3 +1307,42 @@ Planning dynamic UI rendering by mapping over fetched API data.
 
 
 
+# Web Dev Journey– Day 34-35(Weekend)[i completed youtube project]
+
+A functional and responsive YouTube clone built with React, Tailwind CSS, and React Router, powered by the YouTube Data API v3.
+
+# Features
+Homepage with Video Feed: Displays a grid of trending/popular videos using the YouTube API.
+Reusable Video Card Component (BodyCard): Each video card shows thumbnail, title, channel name, and formatted view count.
+Responsive Layout: Built with Tailwind CSS for mobile-friendly design, hover effects, and clean spacing.
+Sidebar Navigation: Includes Home, Subscriptions, and other sections, similar to the actual YouTube sidebar.
+
+Watch Page:
+
+Embeds YouTube video via iframe.
+Uses useSearchParams to extract video ID from the query string.
+Suggested Videos Section:
+Displayed alongside the main video on the Watch page.
+Also uses BodyCard layout for consistency.
+React Router DOM Integration:
+Routing is handled with createBrowserRouter.
+
+Supports SPA-style navigation without page reloads.
+
+API Integration:
+Fetches videos from YouTube Data API v3.
+
+Project Structure:
+components/: UI components like Sidebar, BodyCard, FilterButtons, SuggestedVideos.
+pages/: Main route-level components like Home.jsx, Watch.jsx.
+utils/: Constants like the API base URL.
+
+# Tech Stack
+React (for UI and component architecture)
+Tailwind CSS (for styling)
+React Router DOM (for SPA routing and navigation)
+Vite (as the frontend build tool)
+YouTube Data API v3 (for real-time video content)
+
+
+
